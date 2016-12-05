@@ -211,7 +211,7 @@ void sendMIDI(float floatsDat[])
      controlMIDI(floatsDat[4],0,(int)floatsDat[1]);
     }
   }
-  if(panVal!=lastPan&&panVal<110&&panVal>130)
+  if(panVal!=lastPan&&(panVal<50||panVal>70))
   {
   if (floatsDat[4] == 3)
     {
